@@ -23,9 +23,9 @@ def form():
 # route 3: accept the form submission and do something fancy with it
 @app.route('/submit')
 def submit():
-    js = request.args # Load in the form data
+    js = request.args["JobDesc"] # Load in the form data
     doc = gensim.utils.simple_preprocess(js) # Preprocess the job description
-    model = pickle.load(open('../Doc2Vec/model.p', 'rb')) # Load the model
+    model = pickle.load(open('./model.p', 'rb')) # Load the model
     vector = model.infer_vector(doc) # Vectorize the job description
     sims = model.docvecs.most_similar([vector])
     return render_template('results.html', recommendation=sims)
