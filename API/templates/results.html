@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Course Recommendations</title>
 </head>
+
 <body>
-<h2> Here are the most relevant courses for your job: ${{recommendation}}<h2>
+
+	<h2> Top {{len}} Course Recommendations:<h2>
+
+	<ol>
+	{%for i in range(len)%}
+		<li>{{recommendations[i]}}</li>
+	{%endfor%}
+</ol>
+
 </body>
+
 </html>
