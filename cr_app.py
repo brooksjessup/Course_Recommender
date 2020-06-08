@@ -31,7 +31,7 @@ def submit():
     top = 10 # Set how many courses to recommend
     sims = model.docvecs.most_similar([vector], topn=top) # Find the most similar vectors
     course_ids = [sim[0] for sim in sims] # Extract the course index numbers
-    df = pd.read_csv('../Data/Course_Data/Coursera_Catalog.csv') # Read in course data
+    df = pd.read_csv('./Data/Course_Data/Coursera_Catalog.csv') # Read in course data
     course_names = [df.iloc[id]['name'] for id in course_ids] # Get the course names
     return render_template('results.html', recommendations=course_names, len=top)
 
