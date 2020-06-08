@@ -8,11 +8,9 @@ import pandas as pd
 # initialize the flask app
 app = Flask('cr_app')
 
-# route 1: hello world
 @app.route('/')
 def home():
-    # return a simple string
-    return '<html><body><h1>Welcome to Course Recommender!</h1></body></html>'
+    return render_template('form.html')
 
 # route 2: show a form to the user
 @app.route('/form')
