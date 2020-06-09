@@ -8,18 +8,13 @@ import pandas as pd
 # initialize the flask app
 app = Flask('cr_app')
 
+# route 1: show a form for user to fill in
 @app.route('/')
 def home():
-    return render_template('form.html')
-
-# route 2: show a form to the user
-@app.route('/form')
-def form():
     # use flask's render_template function to display an html page
     return render_template('form.html')
 
-
-# route 3: accept the form submission and do something fancy with it
+# route 2: accept the form submission and do something fancy with it
 @app.route('/submit')
 def submit():
     js = request.args["JobDesc"] # Load in the form data
@@ -34,5 +29,5 @@ def submit():
     return render_template('results.html', recommendations=course_names, len=top)
 
 # Call app.run(debug=True) when python script is called
-if __name__ == '__main__': # if you run 'python app_starter.py' from terminal
+if __name__ == '__main__':
     app.run(debug=True)
