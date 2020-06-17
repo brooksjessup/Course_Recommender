@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Recommender</title>
+	<title>Course Recommender</title>
 </head>
+
 <body>
-	<h1>Welcome to Course Recommender!</h1>
-	<form action="/submit">
+
+	<header>
+		<h1>Course Recommender for Professional Development</h1>
+	</header>
+
+	<main>
 		<p>
-			<label for="JobDesc">Enter a job description:</label><br>
-			<textarea name="JobDesc"></textarea>
+			Which courses should you take to help you land your dream job? Course recommender will make a few suggestions.
 		</p>
-		<p><button type="submit">Submit</button></p>
-	</form>
+
+		<form action="/submit">
+			<p>
+				<label for="JobDesc">Submit a job description:</label><br>
+				<textarea name="JobDesc" placeholder="Your job description..."></textarea>
+			</p>
+			<p><button type="submit">Submit</button></p>
+		</form>
+	</main>
+
+	<footer>
+		created by Brooks Jessup
+	</footer>
+
 </body>
 </html>
