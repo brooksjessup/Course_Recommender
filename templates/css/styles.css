@@ -1,0 +1,35 @@
+body {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #a9a9a9;
+}
+
+h1 {
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.submission-container {
+  text-align: center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+.results-container {
+  text-align: center;
+  color: white;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+textarea {
+  margin: auto;
+  border-color: black;
+}
+
+footer {
+  text-align: right;
+}

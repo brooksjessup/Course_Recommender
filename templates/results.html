@@ -1,28 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<title>Course Recommendations</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Career Course Recommender</title>
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
-	<header>
-		<h1>Course Recommender for Professional Development</h1>
-	</header>
-
 	<main>
-	<h2> Your top {{len}} Course Recommendations:</h2>
-	<ol>
-		{%for i in range(len)%}
-			<li>{{recommendations[i]}}</li>
-		{%endfor%}
-	</ol>
+		<section class="results">
+			<div class="results-container">
+				<h1>Career Course Recommender</h1>
+				<ol>
+					{%for i in range(len)%}
+						<li>{{recommendations[i]}}</li>
+					{%endfor%}
+				</ol>
 </main>
-
-	<footer>
-		created by Brooks Jessup
-	</footer>
 
 </body>
 
