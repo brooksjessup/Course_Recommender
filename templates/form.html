@@ -6,19 +6,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Career Course Recommender</title>
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+
+	<header>
+		<p>Career Course Recommender</p>
+	</header>
+
 	<main>
+
+		<!-- <section class="description">
+			<p>What is your target job?</p>
+		</section> -->
+
 		<section class="submission-form">
-			<div class="submission-container">
-				<h1>Career Course Recommender</h1>
 				<form action="/submit">
-					<p><textarea name="JobDesc" placeholder="Enter a job description..." rows="10" cols="50" required></textarea></p>
-					<p><button type="submit">Submit</button></p>
+					<textarea name="JobDesc" placeholder="Enter a job description and click the button below." rows="20" cols="75" required></textarea><br><br>
+					<button type="submit">Recommend</button>
 				</form>
-			</div>
 		</section>
+
 	</main>
+
+	<footer>
+		<!-- <i class="fa fa-car"></i> -->
+	</footer>
+
 </body>
 </html>

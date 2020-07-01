@@ -11,15 +11,13 @@
 <body>
 
 	<main>
-		<section class="results">
-			<div class="results-container">
-				<h1>Career Course Recommender</h1>
-				<ol>
+				<dl>
 					{%for i in range(len)%}
-						<li>{{recommendations[i]}}</li>
+						<dt>{{names[i]}}</dt>
+						<dd>{{descriptions[i]}}</dt>
 					{%endfor%}
-				</ol>
-</main>
+				</dl>
+	</main>
 
 </body>
 
