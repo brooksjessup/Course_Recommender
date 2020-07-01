@@ -26,7 +26,7 @@ def submit():
     course_ids = [sim[0] for sim in sims] # Extract the course index numbers
     df = pd.read_csv('./Data/Course_Data/Coursera_Catalog.csv') # Read in course data
     course_names = [df.iloc[id]['name'] for id in course_ids] # Get the course names
-    course_descriptions = [df.iloc[id]['description'][0:120] + "..." for id in course_ids] # Get the course descriptions
+    course_descriptions = [df.iloc[id]['description'][0:150] + "..." for id in course_ids] # Get the course descriptions
     return render_template('results.html', len=top, names=course_names, descriptions=course_descriptions)
 
 # Call app.run(debug=True) when python script is called

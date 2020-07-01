@@ -16,28 +16,28 @@ header {
   padding-bottom: 1rem;
 }
 
-footer {
+/* footer {
   padding-top: 1rem;
   text-align: center;
+} */
 
-}
-
-.description {
+/* .description {
   text-align: center;
   color: black;
   font-family: Verdana, sans-serif;
   font-size: 20px;
   font-weight: 500;
   font-style: italic;
-}
+} */
 
 .submission-form {
   text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 textarea {
   margin: auto;
-  border-color: grey;
   outline: none;
   resize: none;
   text-align: left;
@@ -58,6 +58,10 @@ button {
 
 dt {
   font-weight: bold;
+}
+
+.button-container {
+  text-align: center;
 }
 
 /* .results-container {
