@@ -12,23 +12,9 @@ header {
   font-size: 23px;
   font-weight: 700;
   font-style: normal;
-  padding-top: 3rem;
-  padding-bottom: 1rem;
+  padding-top: 2rem;
+  /* padding-bottom: 0rem; */
 }
-
-/* footer {
-  padding-top: 1rem;
-  text-align: center;
-} */
-
-/* .description {
-  text-align: center;
-  color: black;
-  font-family: Verdana, sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  font-style: italic;
-} */
 
 .submission-form {
   text-align: center;
