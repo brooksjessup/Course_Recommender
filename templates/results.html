@@ -6,13 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Career Course Recommender</title>
 	<link rel="stylesheet" href="../static/css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
 	<main>
 		<section class="results-list">
-
 				<dl>
 					{%for i in range(len)%}
 						<dt>{{names[i]}}</dt>
@@ -25,9 +25,14 @@
 						<button type="submit">Start Over</button>
 					</form>
 				</div>
-
 		</section>
 	</main>
+
+	<footer>
+		<div class="info-container">
+			<a class="info" href="https://brooksjessup.github.io/"><i class="fa fa-info-circle fa-lg"></i></a>
+		</div>
+	</footer>
 
 </body>
 

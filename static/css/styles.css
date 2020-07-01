@@ -16,6 +16,12 @@ header {
   /* padding-bottom: 0rem; */
 }
 
+footer {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
 .submission-form {
   text-align: center;
   padding-left: 1rem;
@@ -37,7 +43,7 @@ button {
 
 .results-list {
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 0rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -50,10 +56,11 @@ dt {
   text-align: center;
 }
 
-/* .results-container {
+.info-container {
   text-align: center;
-  color: white;
-  background-size: cover;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-} */
+  display: inline-block;
+}
+
+.info {
+  color: gray;
+}
