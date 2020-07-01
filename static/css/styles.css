@@ -37,7 +37,7 @@ footer {
 
 textarea {
   margin: auto;
-  border-color: black;
+  border-color: grey;
   outline: none;
   resize: none;
   text-align: left;
@@ -46,13 +46,24 @@ textarea {
 
 button {
   padding: 10px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
-.results-container {
+.results-list {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+dt {
+  font-weight: bold;
+}
+
+/* .results-container {
   text-align: center;
   color: white;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
-}
+} */
