@@ -1,1 +1,1 @@
-# MOOC-Project
+# Capstone Project
