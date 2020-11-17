@@ -5,7 +5,7 @@
 Online learning can be a valuable tool for jobseekers to acquire the skills they need to land the jobs they want, without having to leave the safety of their own homes in the middle of a pandemic. However, each individual jobseeker faces the challenge of determining which courses among the thousands available online will be the most relevant to their particular dream job. Can machine learning help them find the most relevant courses?
 
 ## 2. Data Collection
-I collected course data from the leading online learning platform, Coursera. By writing a Python function to send multiple get requests to Coursera’s public [Catalog API](https://build.coursera.org/app-platform/catalog/), I gathered information on all 4,416 courses currently available from their platform. The resulting dataset includes the title, instructor, description, and other features of each of these courses.
+I collected course data from a leading online learning platform, Coursera. By writing a Python function to send multiple get requests to Coursera’s public [Catalog API](https://build.coursera.org/app-platform/catalog/), I gathered information for all 4,416 courses currently available on their platform. The resulting dataset includes the title, instructor, description, and other features of each of these courses.
 
 ## 3. Data Modeling
 I built a machine learning model to predict which courses in the dataset would be most relevant to a given job. Using Python’s Gensim library for Natural Language Processing, I trained a Doc2Vec model to learn numerical representations for the rich textual data provided in the descriptions of the courses. The model can take any job description (such as from a job board) and calculate which course descriptions are mathematically most similar to it.
